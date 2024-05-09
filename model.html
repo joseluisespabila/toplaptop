@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,30 +8,13 @@
   <!-- Enlaces a los archivos de Bootstrap CSS -->
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
+
 <body>
   <!-- Barra superior -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <div class="container">
-      <a class="navbar-brand" href="#">Logo</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Acerca de</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Servicios</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contacto</a>
-          </li>
-        </ul>
-      </div>
+      <a class="navbar-brand" href="./index.html"><img src="./img/toplatptop2.png" width="90px"></a>
+      <h1 class="text-white font-weight-bold">TOP LAPTOP</h1>
     </div>
   </nav>
 
@@ -38,17 +22,119 @@
   <div class="container mt-4">
     <div class="row">
       <div class="col-lg-12">
-        <h1 class="text-center">Contenido Principal</h1>
-        <p class="lead text-center">Este es el contenido principal de tu página.</p>
+        <h1 class="text-center">Calculadora de Precios de Portatiles</h1>
+        <br>
+        <form>
+          <div class="container">
+            <div class="row mb-4">
+              <div class="col-sm">
+                <label for="exampleInputEmail1" class="form-label">Marca</label>
+                <select class="custom-select">
+                  <option selected>Open this select menu</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+                <!-- <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"> -->
+                <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+              </div>
+              <div class="col-sm">
+                <label for="exampleInputEmail1" class="form-label">RAM</label>
+                   <select class="custom-select">
+                  <option selected>Open this select menu</option>
+                  <option value="1">2</option>
+                  <option value="2">4</option>
+                  <option value="3">8</option>
+                  <option value="4">12</option>
+                  <option value="5">16</option>
+                  <option value="6">32</option>
+                  <option value="7">64</option>
+                  
+                </select>
+              </div>
+              <div class="col-sm">
+                <label for="exampleInputEmail1" class="form-label">Tipo de RAM</label>
+                <select class="custom-select">
+                  <option selected>Open this select menu</option>
+                  <option value="1">DDR4</option>
+                  <option value="2">DDR5</option>
+                  <option value="3">LPDDR4</option>
+                  <option value="4">LPDDR5</option>
+                  <option value="5">LPDDR4X</option>
+                  <option value="6">LPDDR5X</option>
+                  <option value="7">otro</option>
+                  
+                </select>
+              </div>
+            </div>
+            <div class="row mb-4">
+              <div class="col-sm">
+                <label for="exampleInputEmail1" class="form-label">Almacenamiento</label>
+                <select class="custom-select">
+                  <option selected>gigabytes</option>
+                  <option value="1">32</option>
+                  <option value="2">64</option>
+                  <option value="3">128</option>
+                  <option value="3">256</option>
+                  <option value="3">512</option>
+                  <option value="3">1024</option>
+                  <option value="3">2056</option>
+                </select>
+                <!-- <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"> -->
+                <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+              </div>
+              <div class="col-sm">
+                <label for="exampleInputEmail1" class="form-label">Tipo de unidad de almacenamiento</label>
+                   <select class="custom-select">
+                  <option selected>Open this select menu</option>
+                  <option value="1">SSD</option>
+                  <option value="2">Disco Duro</option>
+                  
+                </select>
+              </div>
+              <div class="col-sm">
+                <label for="exampleInputEmail1" class="form-label">Sistema Operativo</label>
+                <select class="custom-select">
+                  <option selected>Open this select menu</option>
+                  <option value="1">Windows</option>
+                  <option value="2">Mac</option>
+                  <option value="7">Otro</option>
+                  
+                </select>
+              </div>
+            </div>
+            <div class="row mb-4">
+              <div class="col-sm">
+                <label for="exampleInputEmail1" class="form-label">Pulgadas</label>
+                <input class="form-control" type="number" min="11.60" max="18.00" step="0.10" name="" id="">
+                <!-- <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"> -->
+                <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+              </div>
+              <div class="col-sm">
+                <label for="exampleInputEmail1" class="form-label">Alto de pantalla</label>
+                <input class="form-control" type="number" name="" id="">
+                
+              </div>
+              <div class="col-sm">
+                <label  for="exampleInputEmail1" class="form-label">Ancho de pantalla</label>
+                <input class="form-control" type="number"  name="" id="">
+              </div>
+            </div>
+          </div>
+
+        <br>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
       </div>
     </div>
   </div>
-<!-- 
+  <!-- 
   campos que debe tener:
-  marca
-  ram gb
+  presio*
+  marca*
+  ram gb*
   ram type
-  rom gb
+  rom gb*
   rom type
   display size
   resolution width
